@@ -1,0 +1,429 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Public Sans';
+}
+
+html, body{
+    scroll-behavior: smooth;
+}
+
+button{
+    cursor: pointer;
+    padding: 5px 14px;
+    border-radius: 5px;
+    background-color: #30CD7A;
+    border: none;
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+nav{
+    display: flex;
+    background-color: white;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 30px;
+}
+
+button{
+    color: white;
+    padding: 12px 30px;
+    border-radius: 20px;
+}
+nav ul{
+    display: flex;
+    gap: 50px;
+}
+
+main{
+    display: flex;
+    align-items: center;
+    background-color: #F3F4F6;
+    padding: 4rem;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+main img, main .main-div{
+    width: 40%;
+}
+
+main p{
+    font-size: 25px;
+    margin: 30px 0;
+}
+
+main h1{
+    font-size: 60px;
+    font-weight: 400;
+}
+
+#about{
+    padding: 6rem 4rem;
+    background-color: #FAFAFA;
+}
+
+#about .about-header{
+    width: 40%;
+}
+
+#about .about-header h1{
+    font-size: 40px;
+    font-weight: 400;
+}
+
+#about .about-header p{
+    font-size: 20px;
+    margin: 20px 0;
+}
+
+#about .about-body{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin: 50px 0 0;
+    gap: 50px;
+}
+
+#about .about-body h4{
+    font-size: 20px;
+    margin: 20px 0;
+}
+
+#for{
+    padding: 6rem 4rem;
+    background-color: #F3F4F6;
+}
+
+#for .about-top{
+    font-size: 15px;
+    width: 40%;
+    margin: 20px 0;
+    font-weight: 100;
+}
+
+.for-top{
+    box-shadow: 5px 5px 10px gray;
+}
+
+.for-top div{
+    padding: 20px 10px 20px;
+}
+
+#for .about-bottom{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin: 50px 0 0;
+    gap: 50px;
+}
+
+.about-bottom a{
+    color: black;
+    font-size: 14px;
+    padding-bottom: 12px;
+    display: block;
+}
+
+.about-bottom a:hover{
+    color: #30CD7A;
+}
+
+#for .about-bottom h4{
+    font-size: 15px;
+    margin: 0 0 14px 0;
+}
+
+#for .about-bottom img{
+     width: 100%;
+}
+
+#for .about-bottom p{
+    font-size: 14px;
+}
+
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    padding-left: 4rem;
+    padding-right: 4rem;
+    background-color: #2D314D;
+}
+
+footer .footer-links a{
+    color: white;
+}
+
+footer .footer-links a{
+    margin-top: 5rem;
+}
+
+footer .footer-links{
+    display: flex;
+    align-items: center;
+    gap: 5rem;
+    color: white;
+    justify-content: space-between;
+    text-decoration: none;
+}
+footer .top ul{
+    display: flex;
+    margin-top: 2rem;
+    gap: 20px;
+}
+
+footer p{
+    margin-top: 20px;
+    color: white;
+}
+
+.footer-links ul li{
+    margin: 20px 0;
+}
+
+.footer-logo{
+    filter: invert(0.7);
+}
+
+.togglers{
+    display: none;
+}
+
+@media screen and (max-width:768px) {
+    main{
+        padding: 2.5rem;
+    }
+
+    main .main-div{
+        width: 50%;
+    }
+
+    main h1{
+        font-size: 35px;
+        font-weight: 600;
+    }
+
+    main p{
+        font-size: 15px;
+    }
+
+    #about .about-header{
+        width: 90%;
+    }
+
+    #about .about-header h1{
+        font-size: 30px;
+        font-weight: 400;
+    }
+
+    #about .about-header p{
+        font-size: 15px;
+        line-height: 2;
+    }
+
+    #about .about-body{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin: 50px 0 0;
+        gap: 50px;
+    }
+
+    #about .about-body h4{
+        font-size: 15px;
+    }
+
+    #about .about-body p{
+        font-size: 15px;
+    }
+
+    #for .about-bottom{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin: 50px 0 0;
+    }
+
+    footer{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
+    footer .footer-links a{
+        font-size: 10px;
+    }
+
+    footer p{
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width:576px) {
+    nav{
+        padding: 2rem 2rem;
+    }
+
+    nav div{
+        display: none;
+    }
+
+    nav ul{
+        gap: 25px;
+        font-size: 15px;
+    }
+
+    nav .logo{
+        width: 20%;
+    }
+
+    .togglers{
+        display: block;
+        cursor: pointer;
+        font-size: 20px;
+    }
+
+    .ri-close-line{
+        display: none;
+    }
+    
+    button{
+        font-size: 10px;
+        font-size: 5px 8px;
+    }
+
+    main{
+        padding: 1.5rem;
+    }
+
+    main h1{
+        font-size: 28px;
+    }
+
+    nav ul{
+        position: fixed;
+        top: -30%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        flex-direction: column;
+        width: 50%;
+        text-align: center;
+        padding: 2rem 0;
+        background-color: #f2f2f2;
+        box-shadow: 0 0 7px #969696;
+        transition: .5s;
+    }
+
+    #for, #about{
+        padding: 6rem 2rem;
+    }
+
+    foot
+}
+
+@media screen and (max-width:604px) {
+    nav div{
+        display: none;
+    }
+}
+
+@media screen and (max-width:480px) {
+    main{
+        flex-direction: column-reverse;
+    }
+
+    main img{
+        width: 100%;
+    }
+
+    main .main-div{
+        text-align: center;
+        width: 90%;
+    }
+
+    #about .about-header{
+        text-align: center;
+        width: 80%;
+        margin: auto;
+    }
+
+    #about .about-body{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        margin: 50px 0 0;
+        gap: 50px;
+        text-align: center;
+    }
+
+    #for h2{
+        text-align: center;
+        font-size: 15px;
+    }
+
+    #for .about-bottom{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        margin: 50px 0 0;
+    }
+
+    footer{
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+
+    #footer{
+        display: none;
+    }
+
+}
+
+
+@media screen and (max-width:480px) {
+    main p{
+        line-height: 2;
+    }
+
+    footer{
+        flex-direction: column;
+        padding-top: 3rem;
+    }
+
+    .footer-links{
+        font-size: 25px;
+    }
+
+    .footer-links{
+        margin: 20px 0;
+    }
+
+    .footer-links ul{
+        font-size: 35px;
+    }
+
+    #footer{
+        display: block;
+        padding-bottom: 2rem;
+    }
+    
+}
+
+@media screen and (max-width:375px) {
+    #for h2{
+        font-weight: 200;
+    }
+}
+
+
+
